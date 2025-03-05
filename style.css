@@ -1,0 +1,128 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    margin-top: 50px;
+    background-color: #070b18;
+    text-align: center;
+    display:flex;
+    flex-direction: row;
+    align-items:center;
+    justify-content: space-around;
+}
+main h1{
+    font-family: cursive;
+    font-weight: bold;
+    font-size:50px;
+    color: rgb(255, 255, 255);
+}
+.container{
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.game{
+    height: 60vmin;
+    width: 60vmin;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 2.5vmin;
+    border: 2px solid greenyellow;
+    padding: 15px;
+    border-radius: 20px;
+
+}
+.box{
+    height: 18vmin;
+    width: 18vmin;
+    border-radius: 30px;
+    background-color: #b6bcc0;
+    color: rgb(16, 32, 42);
+    /* box-shadow: 5px 5px 20px #1b3a4d; */
+    font-size: 8vmin;
+    font-family: cursive;
+    font-weight: bold;
+    border: 1px solid black;
+    border: 6px solid greenyellow;
+    
+}
+.box:hover{
+    background-color:white;
+    transition-duration: 0.7s;
+    transform: scale(1.02);
+    transition-duration: 0.2s;
+
+}
+#resetBtn{
+    padding:20px;
+    font-size: 25px;
+    border-radius: 30px;
+    border: 0px;
+    font-family: cursive;
+    background-color: greenyellow;
+    color: rgb(7, 7, 7);
+
+    font-weight: bold;
+    box-shadow: 2px 1px 50px #0f0f26;
+
+}
+#resetBtn:hover{
+    background-color:rgb(108, 227, 90);
+    transform: scale(1.05);
+    transition-duration: 0.2s;
+}
+#new-btn{
+    margin-top: 20px;
+    padding: 20px;
+    font-size: 25px;
+    border-radius: 30px;
+    border: 0px;
+    font-family: cursive;
+    background-color: greenyellow;
+    color: rgb(7, 7, 7);
+
+    font-weight: bold;
+    box-shadow: 2px 2px 20px #020303;
+
+}
+#new-btn:hover{
+    background-color:rgb(108, 227, 90);
+    transform: scale(1.05);
+    transition-duration: 0.2s;
+}
+.msg-container{
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-family: cursive;
+    font-size: 40px;
+    font-weight: bold;
+    color: #ffffff;
+    margin-bottom: 50px;
+    /* border: 1px solid yellowgreen; */
+    width: 70vmin;
+    border-radius: 20px;
+    padding: 20px;
+    animation:increaseSize 2s forwards;
+
+}
+
+@keyframes increaseSize{
+    0%{
+        font-size: 40px;
+    }
+    100%{
+        font-size: 60px;
+    }
+}
+.hide{
+    display: none;
+}
